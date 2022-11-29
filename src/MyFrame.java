@@ -1,11 +1,16 @@
-import javax.swing.JFrame;
-import javax.swing.ImageIcon;
+import javax.swing.*;
 import java.awt.*;
 
 
 public class MyFrame extends JFrame {
 
     MyFrame(){
+
+        JLabel label = new JLabel();
+
+        label.setText("Adam");
+
+
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize(); // rozmiar okna na caly ekran
         this.setSize(new Dimension(screenSize.width, screenSize.height));
 
@@ -19,5 +24,6 @@ public class MyFrame extends JFrame {
 
         this.getContentPane().setBackground(new Color(0x123456));
         this.setVisible(true);
+        this.add(label);
     }
 }
